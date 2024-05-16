@@ -1,22 +1,25 @@
 # webpackTemplate
 
+Includes ESLint
+
 ## Commands
 
-
 ### Start
+
 1. npm init -y
 2. npm install
 
 ### Scripts
+
 1. npm run build
    - builds and run the production config
-3. npm start
+2. npm start
    - "webpack serve --open" Opens webpack-dev-server
-5. npm watch
+3. npm watch
    - "webpack --watch" Watches all files within dependency graph for changes and auto builds
 
-
 ### Publish to github pages
+
 #### Step 1
 
 Remove the `dist` directory from the project’s `.gitignore` file (it’s ignored by default by Yeoman).
@@ -39,8 +42,16 @@ git subtree push --prefix dist origin gh-pages
 
 Boom. If your folder isn’t called `dist`, then you’ll need to change that in each of the commands above.
 
-#### Script 
+#### Script
+
 Each time you need to update your project’s live preview:
+
 ```sh
 npm run gh-page
+```
+
+#### ESLint commands
+
+```sh
+npx eslint yourfile.js
 ```
